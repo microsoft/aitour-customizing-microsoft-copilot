@@ -6,27 +6,33 @@ To help prepare content for AI Tour, please use this template repository for org
 5. If you are taking advantage of the static front end site, edit the content in the _config.yml file as needed (specifically the title and description)
 
 
-# [TODO: Insert Session Title]
+# Developers' Guide to Customizing Microsoft Copilot
+![image](https://github.com/user-attachments/assets/9f92c0df-7449-4aca-bd38-e4cec37789e2)
 
-This repo is intended as a template for Microsoft AI Tour repositories
+
+This repo is a companion to this session at Microsoft AI Tour, a worldwide tour of events.
 
 ## Session Desciption
 
-TODO: Add short description of the session. Please note this description should be at a technical level that anyone from decision makers to conference attendees can understand.
+This session will introduce the components of the Copilot stack and explain the different options of extensibility and integration that you can enable with Microsoft Copilot. The session contains arechitecture and code deepdives that help showcase the different extensibility pathways.
 
 ## Learning Outcomes
-TODO: Add a list of what you hope the attendee will take away from this session. This can be skills, technology, appreciation, etc.
+You will learn how to integrate your systems, workflows, and applications directly with Microsoft Copilot, maximizing Copilot's potential through different types of copilot extensions. You will learn which type of extensibility and development pathway is the right one for you and see these extensions be built live during the breakout.
 
 ## Technology Used
-TODO: Add a list of any technology or software used.
+- Plugins
+- Connectors
+- Custom Copilots
+- AI Library + Toolkit (VS Code)
+- Copilot Studio
+- AI Studio + Open AI Models
 
 ## Additional Resources and Continued Learning
-TODO: If you would like to link the user to further learning, please enter that here.
 
 | Resources          | Links                             | Description        |
 |:-------------------|:----------------------------------|:-------------------|
-| Future Learning 1  | [Link 1](https://www.google.com/) | Learn more about X |
-| Future Learning 2  | [Link 2](https://www.google.com/) | Learn more about Y |
+| Copilot Developer Camp  | [Link 1](https://aka.ms/copilotdevcamp) | Learn more about Copilot Extensibility and get hands on with Labs and Samples|
+
 
 ## Content Owners
 TODO: Add yourself as a content owner
@@ -39,13 +45,39 @@ TODO: Add yourself as a content owner
 <table>
 <tr>
     <td align="center"><a href="http://learnanalytics.microsoft.com">
-        <img src="https://github.com/cole-g-johnson.png" width="100px;" alt="Chris Testa-O'Neill
+        <img src="https://github.com/aycabas.png" width="100px;" alt="Chris Testa-O'Neill
 "/><br />
-        <sub><b>INSERT NAME HERE
+        <sub><b>Ayca BAS
 </b></sub></a><br />
-            <a href="https://github.com/cole-g-johnson" title="talk">📢</a> 
+            <a href="https://github.com/aycabas" title="talk">📢</a> 
+    </td>
+    <td align="center"><a href="http://learnanalytics.microsoft.com">
+        <img src="https://github.com/garrytrinder.png" width="100px;" alt="Chris Testa-O'Neill
+"/><br />
+        <sub><b>Garry Trinder
+</b></sub></a><br />
+            <a href="https://github.com/garrytrinder" title="talk">📢</a> 
+    </td>
+    <td align="center"><a href="http://learnanalytics.microsoft.com">
+        <img src="https://github.com/barnam-bora.png" width="100px;" alt="Chris Testa-O'Neill
+"/><br />
+        <sub><b>Barnam Bora
+</b></sub></a><br />
+            <a href="https://github.com/barnam-bora" title="talk">📢</a> 
     </td>
 </tr></table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
+## Responsible AI 
+
+Microsoft is committed to helping our customers use our AI products responsibly, sharing our learnings, and building trust-based partnerships through tools like Transparency Notes and Impact Assessments. Many of these resources can be found at [https://aka.ms/RAI](https://aka.ms/RAI).
+Microsoft’s approach to responsible AI is grounded in our AI principles of fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability.
+
+Large-scale natural language, image, and speech models - like the ones used in this sample - can potentially behave in ways that are unfair, unreliable, or offensive, in turn causing harms. Please consult the [Azure OpenAI service Transparency note](https://learn.microsoft.com/legal/cognitive-services/openai/transparency-note?tabs=text) to be informed about risks and limitations.
+
+The recommended approach to mitigating these risks is to include a safety system in your architecture that can detect and prevent harmful behavior. [Azure AI Content Safety](https://learn.microsoft.com/azure/ai-services/content-safety/overview) provides an independent layer of protection, able to detect harmful user-generated and AI-generated content in applications and services. Azure AI Content Safety includes text and image APIs that allow you to detect material that is harmful. We also have an interactive Content Safety Studio that allows you to view, explore and try out sample code for detecting harmful content across different modalities. The following [quickstart documentation](https://learn.microsoft.com/azure/ai-services/content-safety/quickstart-text?tabs=visual-studio%2Clinux&pivots=programming-language-rest) guides you through making requests to the service.
+
+Another aspect to take into account is the overall application performance. With multi-modal and multi-models applications, we consider performance to mean that the system performs as you and your users expect, including not generating harmful outputs. It's important to assess the performance of your overall application using [generation quality and risk and safety metrics](https://learn.microsoft.com/azure/ai-studio/concepts/evaluation-metrics-built-in).
+
+You can evaluate your AI application in your development environment using the [prompt flow SDK](https://microsoft.github.io/promptflow/index.html). Given either a test dataset or a target, your generative AI application generations are quantitatively measured with built-in evaluators or custom evaluators of your choice. To get started with the prompt flow sdk to evaluate your system, you can follow the [quickstart guide](https://learn.microsoft.com/azure/ai-studio/how-to/develop/flow-evaluate-sdk). Once you execute an evaluation run, you can [visualize the results in Azure AI Studio](https://learn.microsoft.com/azure/ai-studio/how-to/evaluate-flow-results).
