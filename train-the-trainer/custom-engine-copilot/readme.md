@@ -68,3 +68,5 @@ This demo showcases how to build a custom engine copilot with Retrieval-Augmente
 10. Start debugging your app by selecting **Run and Debug** tab on Visual Studio Code and **Debug in Teams (Edge)** or **Debug in Teams (Chrome)**. Microsoft Teams will pop up on your browser. Once your app details show up on Teams, select **Add** and start chatting with your app. To test your app, ask similar questions about your data such as:
     - "Tell me about my policy"
     - "What about perks"
+
+>Source code for this demo is available in [src/custom-engine/](../../src/custom-engine/) folder.
