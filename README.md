@@ -16,6 +16,9 @@ This repo is a companion to this session at Microsoft AI Tour, a worldwide tour 
 
 This session will introduce the components of the Copilot stack and explain the different options of extensibility and integration that you can enable with Microsoft Copilot. The session contains arechitecture and code deepdives that help showcase the different extensibility pathways.
 
+![image](https://github.com/user-attachments/assets/374a73e0-4ad2-4d72-bd36-3ab31aa8575b)
+
+
 ## Learning Outcomes
 You will learn how to integrate your systems, workflows, and applications directly with Microsoft Copilot, maximizing Copilot's potential through different types of copilot extensions. You will learn which type of extensibility and development pathway is the right one for you and see these extensions be built live during the breakout.
 
