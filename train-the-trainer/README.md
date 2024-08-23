@@ -15,6 +15,6 @@ code.
 
 | Resources          | Links                            | Description |
 |-------------------|----------------------------------|-------------------|
-| PowerPoint        | - [Presentation](presentations.md) | Slides |
-| PPT Recording     | - [Presentation](https://globaleventcdn.blob.core.windows.net/assets/data/data10/DATA10.mp4) | Video Recording of the PowerPoint slides with no audio |
-| Demo 1             | - [Build Custom engine copilots with the Teams AI library and VSCode](custom-engine-copilot) | Demo instructions and video |
+| PowerPoint        | [Presentation](https://aka.ms/AArxxcd) | Slides |
+| PPT Recording     | [Presentation]() | Video Recording of the PowerPoint slides with no audio |
+| Demo - Build Custom engine copilots with the Teams AI library and VSCode | [Instructions](custom-engine-copilot) & [Video](https://aka.ms/AArxxcf) | Demo instructions and video |
