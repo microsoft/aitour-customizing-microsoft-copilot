@@ -2,6 +2,8 @@
 
 This demo showcases how to build a custom engine copilot with Retrieval-Augmented Generation for sophisticated question answering using Teams AI library and Teams Toolkit.
 
+Video instructions are available [here](https://aka.ms/AArxxcf).
+
 ## Pre-requisites
 
 - [Node.js](https://nodejs.org/), supported versions: 16, 18
