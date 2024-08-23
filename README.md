@@ -25,7 +25,9 @@ You will learn how to integrate your systems, workflows, and applications direct
 ## Technology Used
 - Plugins
 - Connectors
-- Custom Copilots
+- Declarative copilots
+- Teams Toolkit (VS Code)
+- Custom copilots
 - AI Library + Toolkit (VS Code)
 - Copilot Studio
 - AI Studio + Open AI Models
@@ -38,32 +40,25 @@ You will learn how to integrate your systems, workflows, and applications direct
 
 
 ## Content Owners
-TODO: Add yourself as a content owner
-1. Change the src in the image tag to {your github url}.png
-2. Change INSERT NAME HERE to your name
-3. Change the github url in the final href to your url.
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
 <table>
 <tr>
     <td align="center"><a href="http://learnanalytics.microsoft.com">
-        <img src="https://github.com/aycabas.png" width="100px;" alt="Chris Testa-O'Neill
-"/><br />
-        <sub><b>Ayca BAS
+        <img src="https://github.com/aycabas.png" width="100px;" alt="Ayca Bas"/><br />
+        <sub><b>Ayca Bas
 </b></sub></a><br />
             <a href="https://github.com/aycabas" title="talk">📢</a> 
     </td>
     <td align="center"><a href="http://learnanalytics.microsoft.com">
-        <img src="https://github.com/garrytrinder.png" width="100px;" alt="Chris Testa-O'Neill
-"/><br />
+        <img src="https://github.com/garrytrinder.png" width="100px;" alt="Garry Trinder"/><br />
         <sub><b>Garry Trinder
 </b></sub></a><br />
             <a href="https://github.com/garrytrinder" title="talk">📢</a> 
     </td>
     <td align="center"><a href="http://learnanalytics.microsoft.com">
-        <img src="https://github.com/barnam-bora.png" width="100px;" alt="Chris Testa-O'Neill
-"/><br />
+        <img src="https://github.com/barnam-bora.png" width="100px;" alt="Barnam Bora"/><br />
         <sub><b>Barnam Bora
 </b></sub></a><br />
             <a href="https://github.com/barnam-bora" title="talk">📢</a> 
