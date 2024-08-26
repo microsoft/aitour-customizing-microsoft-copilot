@@ -34,6 +34,8 @@ You will learn how to integrate your systems, workflows, and applications direct
 
 ## Additional Resources and Continued Learning
 
+If you are presenting these slides, you can find additional resources, including the slides for the presentation and train the trainer material [here](/train-the-trainer/README.md).
+
 | Resources          | Links                             | Description        |
 |:-------------------|:----------------------------------|:-------------------|
 | Copilot Developer Camp  | [Link 1](https://aka.ms/copilotdevcamp) | Learn more about Copilot Extensibility and get hands on with Labs and Samples|
