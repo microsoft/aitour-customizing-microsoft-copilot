@@ -6,7 +6,7 @@ To help prepare content for AI Tour, please use this template repository for org
 4. The Presenter Notes folder is the train the trainer section. Here add any slide decks, demo videos, and other content as needed. This page has a rough layout to provide ideas but can be edited as needed.
 5. If you are taking advantage of the static front end site, edit the content in the _config.yml file as needed (specifically the title and description)
  -->
-# Developers' Guide to Customizing Microsoft Copilot
+# Developer's Guide to Customizing Microsoft Copilot
 ![image](https://github.com/user-attachments/assets/9f92c0df-7449-4aca-bd38-e4cec37789e2)
 
 
