@@ -1,0 +1,39 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/vDevPreview/MicrosoftTeams.schema.json",
+    "manifestVersion": "devPreview",
+    "version": "1.0.0",
+    "id": "${{TEAMS_APP_ID}}",
+    "packageName": "com.contoso.copilot.support.product",
+    "developer": {
+        "name": "Contoso Electronics",
+        "websiteUrl": "https://www.contoso.com",
+        "privacyUrl": "https://www.contoso.com/privacy",
+        "termsOfUseUrl": "https://www.contoso.com/termsofuse"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Product support copilot",
+        "full": "Contoso Electronics product support copilot"
+    },
+    "description": {
+        "short": "Product support copilot provides answers to questions about products.",
+        "full": "Contoso Electronics product support copilot is an assistant that provides answers to questions about products. They can help with a variety of topics, including product information, warranty, repairs and troubleshooting issues."
+    },
+    "accentColor": "#FFFFFF",
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "copilotExtensions": {
+        "declarativeCopilots": [
+            {
+                "id": "dc-product-support",
+                "file": "declarativeCopilot.json"
+            }
+        ]
+    },
+    "validDomains": []
+}
