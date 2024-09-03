@@ -33,7 +33,7 @@ You will learn how to integrate your systems, workflows, and applications direct
 
 ## Additional Resources and Continued Learning
 
-If you are presenting these slides, you can find additional resources, including the slides for the presentation and train the trainer material [here](/train-the-trainer/README.md).
+If you are presenting these slides, you can find additional resources, including the slides for the presentation to deliver this session [here](/session-delivery-resources/README.md).
 
 | Resources          | Links                             | Description        |
 |:-------------------|:----------------------------------|:-------------------|
