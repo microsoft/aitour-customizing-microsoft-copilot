@@ -4,9 +4,9 @@ This demo showcases how to build a declarative copilot with Teams Toolkit for Vi
 
 The declarative copilot contains instructions, knowledge and conversation starters and can be used to provide information about products, returns, warranties, repairs and help troubleshoot product issues. The information is sourced from a SharePoint Online site.
 
-## Pre-requisites
+## Prerequisites
 
-- [Node.js](https://nodejs.org/), supported versions: 16, 18
+- [Node.js 18](https://nodejs.org/)
 - [Teams Toolkit Visual Studio Code Extension](https://aka.ms/teams-toolkit) pre-release (v5.9.2024081502) and higher, or [Teams Toolkit CLI](https://aka.ms/teamsfx-toolkit-cli) beta (3.0.3-beta.2024081502.0) and higher
 - [Copilot for Microsoft 365 license](https://learn.microsoft.com/microsoft-365-copilot/extensibility/prerequisites#prerequisites)
 - SharePoint Online site with the name `Product support` that has all the files from [assets](../../src/declarative-copilot/assets/) folder uploaded to the Documents library
