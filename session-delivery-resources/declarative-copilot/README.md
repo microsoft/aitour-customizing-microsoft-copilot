@@ -8,7 +8,8 @@ The declarative copilot contains instructions, knowledge and conversation starte
 
 - [Node.js 18](https://nodejs.org/)
 - [Teams Toolkit Visual Studio Code Extension](https://aka.ms/teams-toolkit) pre-release (v5.9.2024081502) and higher, or [Teams Toolkit CLI](https://aka.ms/teamsfx-toolkit-cli) beta (3.0.3-beta.2024081502.0) and higher
-- [Copilot for Microsoft 365 license](https://learn.microsoft.com/microsoft-365-copilot/extensibility/prerequisites#prerequisites)
+- Microsoft 365 tenant [prepared for testing](https://learn.microsoft.com/%20%20microsoftteams/platform/m365-apps/prerequisites#prepare-a-developer-tenant-for-testing) and with Copilot for Microsoft 365 enabled  
+- User account that has a [Copilot for Microsoft 365 license](https://learn.microsoft.com/microsoft-365-copilot/extensibility/prerequisites#prerequisites)
 - SharePoint Online site with the name `Product support` that has all the files from [assets](../../src/declarative-copilot/assets/) folder uploaded to the Documents library
 
 ## Build a basic declarative copilot
