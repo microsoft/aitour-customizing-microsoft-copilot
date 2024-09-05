@@ -29,13 +29,13 @@ After providing all the details mentioned, your project will be scaffolded succe
 
 After the provisioning is completed, you can test your declarative copilot.
 
-1. Press <kbd>F5</kbd> to launch a new browser window.
-1. Wait for the browser to navigate to Copilot for Microsoft 365.
-1. In Copilot for Microsoft 365 expand the side menu.
-1. Select **dc-product-supportlocal**.
+1. Open a browser and navigate to Copilot for Microsoft 365.
 1. In the message box, type _What can you do?_ and press <kbd>Enter</kbd>.
-
-Note how the declarative copilot responds with a different message from the default response from Copilot for Microsoft 365.
+1. Note the response from Copilot chat.
+1. In Copilot for Microsoft 365 expand the side menu.
+1. Select **dc-product-support**.
+1. In the message box, type _What can you do?_ and press <kbd>Enter</kbd>.
+1. Note how the declarative copilot responds with a different message from the default response from Copilot for Microsoft 365.
 
 ## Update declarative copilot
 
@@ -104,12 +104,23 @@ In Visual Studio Code:
 
 1. Save the file.
 1. Open **env/.env.dev**.
-1. Update the **TENANT_NAME** environment variable, replace `tenantname` with the name of your tenant.
+1. Add the **TENANT_NAME** environment variable with the following code snippet:
+
+    ```text
+    TENANT_NAME=<tenantname>
+    ```
+    
+1. Replace `<tenantname>` with the name of your tenant.
 1. Save the file.
 1. Navigate to the Teams Toolkit icon on the left in the VS Code toolbar.
 1. Select **Provision** in the lifeycle section.
-1. Press <kbd>F5</kbd> to launch a new browser window.
-1. Wait for the browser to navigate to Copilot for Microsoft 365.
+1. Wait for the process to finish.
+
+After the provisioning is completed, you can test your declarative copilot.
+
+In the browser:
+
+1. Refresh the page.
 1. In Copilot for Microsoft 365 expand the side menu.
 1. Select **Product support**.
 1. Select the conversation starter _Tell me about the Eagle Air_.
