@@ -2,7 +2,7 @@
 
 This demo showcases how to build a declarative copilot with Teams Toolkit for Visual Studio Code.
 
-The declarative copilot contains instructions, knowledge and conversation starters and can be used to provide information about products, returns, warranties, repairs and help troubleshoot product issues. The information is sourced from a SharePoint Online site.
+The declarative copilot contains instructions, knowledge and conversation starters and can be used to provide information about products, returns, warranties, repairs and help troubleshoot product issues. The declarative copilot uses information from documents stored in SharePoint Online as grounding data.
 
 ## Prerequisites
 
