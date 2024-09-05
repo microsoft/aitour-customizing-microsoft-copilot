@@ -20,7 +20,7 @@ The declarative copilot contains instructions, knowledge and conversation starte
 1. Select **Declarative Copilot**.
 1. Select **No plugin**.
 1. Select default folder as the location to create the project.
-1. Enter `dc-product-support` as the application name.
+1. Enter **dc-product-support** as the application name.
 
 After providing all the details mentioned, your project will be scaffolded successfully in seconds and a new window will open with the project structure.
 
@@ -104,13 +104,7 @@ In Visual Studio Code:
 
 1. Save the file.
 1. Open **env/.env.dev**.
-1. Add the **TENANT_NAME** environment variable with the following code snippet:
-
-   ```text
-   TENANT_NAME=<tenantname>
-   ```
-   
-1. Replace `<tenantname>` with the name of your tenant.
+1. Update the **TENANT_NAME** environment variable, replace `tenantname` with the name of your tenant.
 1. Save the file.
 1. Navigate to the Teams Toolkit icon on the left in the VS Code toolbar.
 1. Select **Provision** in the lifeycle section.
@@ -118,10 +112,16 @@ In Visual Studio Code:
 1. Wait for the browser to navigate to Copilot for Microsoft 365.
 1. In Copilot for Microsoft 365 expand the side menu.
 1. Select **Product support**.
-1. Select the conversation starter `Tell me about the Eagle Air`.
+1. Select the conversation starter _Tell me about the Eagle Air_.
 1. Send the message.
 
 Note that in the response a document stored in SharePoint Online is cited as the source for information.
+
+Try these follow up messages:
+
+1. Tell me about Contoso Quad.
+1. Recommend a product suitable for a farmer.
+1. Explain why the Eagle Air is more suitable than Contoso Quad.
 
 > [!NOTE]
 > [Source code](../../src/declarative-copilot/) for this demo is available.
