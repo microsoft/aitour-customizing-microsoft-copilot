@@ -102,6 +102,15 @@ In Visual Studio Code:
     ```
 
 1. Save the file.
+1. Open **env/.env.dev**.
+1. Add the **TENANT_NAME** environment variable with the following code snippet:
+
+   ```text
+   TENANT_NAME=<tenantname>
+   ```
+   
+1. Replace `<tenantname>` with the name of your tenant.
+1. Save the file.
 1. Navigate to the Teams Toolkit icon on the left in the VS Code toolbar.
 1. Select **Provision** in the lifeycle section.
 1. Press <kbd>F5</kbd> to launch a new browser window.
