@@ -20,3 +20,4 @@ code.
 | PowerPoint        | [Presentation](https://aka.ms/AArxxcd) | Slides |
 | PPT Recording     | [Presentation]() | Video Recording of the PowerPoint slides with no audio |
 | Demo - Build Custom engine copilots with the Teams AI library and VSCode | [Instructions](custom-engine-copilot) & [Video](https://aka.ms/AArxxcf) | Demo instructions and video |
+| Demo - Build declarative copilots with Teams Toolkit for Visual Studio Code | [Instructions](declarative-copilot) & [Video (no audio)](https://aka.ms/AAs532r) | Demo instructions and video |
