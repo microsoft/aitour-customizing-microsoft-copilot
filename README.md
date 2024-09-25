@@ -24,7 +24,7 @@ You will learn how to integrate your systems, workflows, and applications direct
 ## Technology Used
 - Plugins
 - Connectors
-- Declarative copilots
+- Declarative agents
 - Teams Toolkit (VS Code)
 - Custom copilots
 - AI Library + Toolkit (VS Code)

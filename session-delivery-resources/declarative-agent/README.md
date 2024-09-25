@@ -10,7 +10,7 @@ The declarative agent contains instructions, knowledge and conversation starters
 - [Teams Toolkit Visual Studio Code Extension](https://aka.ms/teams-toolkit) pre-release (v5.9.2024081502) and higher, or [Teams Toolkit CLI](https://aka.ms/teamsfx-toolkit-cli) beta (3.0.3-beta.2024081502.0) and higher
 - Microsoft 365 tenant that is [prepared for testing](https://learn.microsoft.com/%20%20microsoftteams/platform/m365-apps/prerequisites#prepare-a-developer-tenant-for-testing) and has Copilot for Microsoft 365 enabled
 - User account that has a [Copilot for Microsoft 365 license](https://learn.microsoft.com/microsoft-365-copilot/extensibility/prerequisites#prerequisites)
-- SharePoint Online site with the name `Product support` that has all the files from [assets](../../src/declarative-copilot/assets/) folder uploaded to the Documents library
+- SharePoint Online site with the name `Product support` that has all the files from [assets](../../src/declarative-agent/assets/) folder uploaded to the Documents library
 
 > [!NOTE]
 > Declarative agent functionality is currently rolling out to tenants with Copilot for Microsoft 365 enabled.
@@ -138,4 +138,4 @@ Try these follow up messages:
 1. Explain why the Eagle Air is more suitable than Contoso Quad.
 
 > [!NOTE]
-> [Source code](../../src/declarative-copilot/) for this demo is available.
+> [Source code](../../src/declarative-agent/) for this demo is available.
