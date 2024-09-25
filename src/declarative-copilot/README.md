@@ -13,7 +13,7 @@ With the declarative copilot, you can build a custom version of Copilot that can
 > - [Node.js](https://nodejs.org/), supported versions: 16, 18
 > - A [Microsoft 365 account for development](https://docs.microsoft.com/microsoftteams/platform/toolkit/accounts).
 > - [Teams Toolkit Visual Studio Code Extension](https://aka.ms/teams-toolkit) pre-release (v5.9.2024081502) and higher, or [Teams Toolkit CLI](https://aka.ms/teamsfx-toolkit-cli) beta (3.0.3-beta.2024081502.0) and higher
-> - [Copilot for Microsoft 365 license](https://learn.microsoft.com/microsoft-365-copilot/extensibility/prerequisites#prerequisites)
+> - [Microsoft 365 Copilot license](https://learn.microsoft.com/microsoft-365-copilot/extensibility/prerequisites#prerequisites)
 
 ### Prepare SharePoint Online
 
@@ -60,4 +60,4 @@ The following are Teams Toolkit specific project files. You can [visit a complet
 
 ## Addition information and references
 
-- [Extend Microsoft Copilot for Microsoft 365](https://aka.ms/teamsfx-copilot-plugin)
+- [Extend Microsoft Microsoft 365 Copilot](https://aka.ms/teamsfx-copilot-plugin)

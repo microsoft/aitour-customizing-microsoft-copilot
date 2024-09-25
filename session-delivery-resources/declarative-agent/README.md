@@ -8,12 +8,12 @@ The declarative agent contains instructions, knowledge and conversation starters
 
 - [Node.js 18](https://nodejs.org/)
 - [Teams Toolkit Visual Studio Code Extension](https://aka.ms/teams-toolkit) pre-release (v5.9.2024081502) and higher, or [Teams Toolkit CLI](https://aka.ms/teamsfx-toolkit-cli) beta (3.0.3-beta.2024081502.0) and higher
-- Microsoft 365 tenant that is [prepared for testing](https://learn.microsoft.com/%20%20microsoftteams/platform/m365-apps/prerequisites#prepare-a-developer-tenant-for-testing) and has Copilot for Microsoft 365 enabled
-- User account that has a [Copilot for Microsoft 365 license](https://learn.microsoft.com/microsoft-365-copilot/extensibility/prerequisites#prerequisites)
+- Microsoft 365 tenant that is [prepared for testing](https://learn.microsoft.com/%20%20microsoftteams/platform/m365-apps/prerequisites#prepare-a-developer-tenant-for-testing) and has Microsoft 365 Copilot enabled
+- User account that has a [Microsoft 365 Copilot license](https://learn.microsoft.com/microsoft-365-copilot/extensibility/prerequisites#prerequisites)
 - SharePoint Online site with the name `Product support` that has all the files from [assets](../../src/declarative-agent/assets/) folder uploaded to the Documents library
 
 > [!NOTE]
-> Declarative agent functionality is currently rolling out to tenants with Copilot for Microsoft 365 enabled.
+> Declarative agent functionality is currently rolling out to tenants with Microsoft 365 Copilot enabled.
 
 ## Build a basic declarative agent
 
@@ -32,13 +32,13 @@ After providing all the details mentioned, your project will be scaffolded succe
 
 After the provisioning is completed, you can test your declarative agent.
 
-1. Open a browser and navigate to Copilot for Microsoft 365.
+1. Open a browser and navigate to Microsoft 365 Copilot.
 1. In the message box, type _What can you do?_ and press <kbd>Enter</kbd>.
 1. Note the response from Copilot chat.
-1. In Copilot for Microsoft 365 expand the side menu.
+1. In Microsoft 365 Copilot expand the side menu.
 1. Select **da-product-support**.
 1. In the message box, type _What can you do?_ and press <kbd>Enter</kbd>.
-1. Note how the declarative agent responds with a different message from the default response from Copilot for Microsoft 365.
+1. Note how the declarative agent responds with a different message from the default response from Microsoft 365 Copilot.
 
 ## Update declarative agent
 
@@ -124,7 +124,7 @@ After the provisioning is completed, you can test your declarative agent.
 In the browser:
 
 1. Refresh the page.
-1. In Copilot for Microsoft 365 expand the side menu.
+1. In Microsoft 365 Copilot expand the side menu.
 1. Select **Product support**.
 1. Select the conversation starter _Tell me about the Eagle Air_.
 1. Send the message.
