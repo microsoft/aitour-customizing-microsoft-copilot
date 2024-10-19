@@ -137,8 +137,16 @@ Note that in the response a document stored in SharePoint Online is cited as the
 Try these follow up messages:
 
 1. Tell me about Contoso Quad.
+
+![Screenshot of Microsoft Edge showing a declarative agent in Microsoft 365 Copilot. A response containing product information about Contoso Quad product is displayed.](./assets/tell-me-about-contoso-quad.png)
+
 1. Recommend a product suitable for a farmer.
+
+![Screenshot of Microsoft Edge showing a declarative agent in Microsoft 365 Copilot. A response containing a recommended product for a farmer is displayed.](./assets/recommend-product.png)
+
 1. Explain why the Eagle Air is more suitable than Contoso Quad.
+
+![Screenshot of Microsoft Edge showing a declarative agent in Microsoft 365 Copilot. A response comparing explaining why the Eagle Air is more suitable for a farmer than Contoso Quad is displayed.](./assets/explain-comparison.png)
 
 > [!NOTE]
 > [Source code](../../src/declarative-agent/) for this demo is available.
