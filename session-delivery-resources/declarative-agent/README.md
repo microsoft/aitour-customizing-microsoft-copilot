@@ -7,10 +7,10 @@ The declarative agent contains instructions, knowledge and conversation starters
 ## Prerequisites
 
 - [Node.js 18](https://nodejs.org/)
-- [Teams Toolkit Visual Studio Code Extension](https://aka.ms/teams-toolkit) pre-release (v5.9.2024081502) and higher, or [Teams Toolkit CLI](https://aka.ms/teamsfx-toolkit-cli) beta (3.0.3-beta.2024081502.0) and higher
+- [Teams Toolkit Visual Studio Code Extension](https://aka.ms/teams-toolkit), v5.10.0 and higher
 - Microsoft 365 tenant that is [prepared for testing](https://learn.microsoft.com/%20%20microsoftteams/platform/m365-apps/prerequisites#prepare-a-developer-tenant-for-testing) and has Microsoft 365 Copilot enabled
 - User account that has a [Microsoft 365 Copilot license](https://learn.microsoft.com/microsoft-365-copilot/extensibility/prerequisites#prerequisites)
-- SharePoint Online site with the name `Product support` that has all the files from [assets](../../src/declarative-agent/assets/) folder uploaded to the Documents library
+- SharePoint Online site with the name `Product marketing` that has all the files from [assets](../../src/declarative-agent/assets/) folder uploaded to the Documents library
 
 > [!NOTE]
 > Declarative agent functionality is currently rolling out to tenants with Microsoft 365 Copilot enabled.
@@ -32,7 +32,7 @@ After providing all the details mentioned, your project will be scaffolded succe
 
 After the provisioning is completed, you can test your declarative agent.
 
-1. Open a browser and navigate to Microsoft 365 Copilot.
+1. Open a browser and navigate to [Microsoft 365 Copilot](https://office.com/chat).
 1. In the message box, type _What can you do?_ and press <kbd>Enter</kbd>.
 1. Note the response from Copilot chat.
 1. In Microsoft 365 Copilot expand the side menu.
@@ -45,18 +45,11 @@ After the provisioning is completed, you can test your declarative agent.
 In Visual Studio Code:
 
 1. Open **appPackage/declarativeCopilot.json**.
-1. Update **id** property with `da-product-support`.
 1. Update **name** property with `Product support`.
 1. Update **description** property with:
 
     ```text
     Contoso Electronics product support agent is an assistant that provides answers to questions about products that have been designed, built and sold by Contoso Electronics. It can help with a variety of topics, providing information on products, returns, warranties, repairs and help troubleshoot product issues.
-    ```
-
-1. Update **instructions** property with:
-
-    ```text
-    From now on, you are known as Contoso Electronics Product Support declarative agent. You are a friendly and approachable assistant, always ready to assist users with their needs. You embody the reliability and consistency of Contoso Electronics, always providing steady and dependable support. Despite being an assistant, you strive to make every interaction feel personal and human-like. You are patient and understanding, making you great at helping users troubleshoot issues. You don't rush users and are always willing to take the time to ensure they fully understand the solution. You are also knowledgeable about all Contoso Electronics products. You can provide advice and guidance on how to use the products, as well as information on repairs, returns, and warranties. Despite your vast knowledge, you communicate in a way that is easy to understand, avoiding technical jargon whenever possible.
     ```
 
 1. Add **conversation_starters** array property with the following code snippet:
@@ -98,7 +91,7 @@ In Visual Studio Code:
             "name": "OneDriveAndSharePoint",
             "items_by_url": [
                 {
-                    "url": "https://${{TENANT_NAME}}.sharepoint.com/sites/productsupport"
+                    "url": "https://${{TENANT_NAME}}.sharepoint.com/sites/productmarketing"
                 }
             ]
         }
@@ -106,13 +99,23 @@ In Visual Studio Code:
     ```
 
 1. Save the file.
+
+1. Open **appPackage/instructions.txt**.
+1. Replace the contents of the file with:
+
+    ```text
+    From now on, you are known as Contoso Electronics Product Support declarative agent. You are a friendly and approachable assistant, always ready to assist users with their needs. You embody the reliability and consistency of Contoso Electronics, always providing steady and dependable support. Despite being an assistant, you strive to make every interaction feel personal and human-like. You are patient and understanding, making you great at helping users troubleshoot issues. You don't rush users and are always willing to take the time to ensure they fully understand the solution. You are also knowledgeable about all Contoso Electronics products. You can provide advice and guidance on how to use the products, as well as information on repairs, returns, and warranties. Despite your vast knowledge, you communicate in a way that is easy to understand, avoiding technical jargon whenever possible.
+    ```
+
+1. Save the file.
+
 1. Open **env/.env.dev**.
 1. Add the **TENANT_NAME** environment variable with the following code snippet:
 
     ```text
     TENANT_NAME=<tenantname>
     ```
-    
+
 1. Replace `<tenantname>` with the name of your tenant.
 1. Save the file.
 1. Navigate to the Teams Toolkit icon on the left in the VS Code toolbar.

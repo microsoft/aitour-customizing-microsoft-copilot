@@ -12,14 +12,14 @@ With the declarative copilot, you can build a custom version of Copilot that can
 >
 > - [Node.js](https://nodejs.org/), supported versions: 16, 18
 > - A [Microsoft 365 account for development](https://docs.microsoft.com/microsoftteams/platform/toolkit/accounts).
-> - [Teams Toolkit Visual Studio Code Extension](https://aka.ms/teams-toolkit) pre-release (v5.9.2024081502) and higher, or [Teams Toolkit CLI](https://aka.ms/teamsfx-toolkit-cli) beta (3.0.3-beta.2024081502.0) and higher
+> - [Teams Toolkit Visual Studio Code Extension](https://aka.ms/teams-toolkit) (v5.10.0) and higher, or [Teams Toolkit CLI](https://aka.ms/teamsfx-toolkit-cli) beta (3.0.3-beta.2024081502.0) and higher
 > - [Microsoft 365 Copilot license](https://learn.microsoft.com/microsoft-365-copilot/extensibility/prerequisites#prerequisites)
 
 ### Prepare SharePoint Online
 
 In a web browser:
 
-1. Create a new team site in SharePoint Online with the name `Product support`
+1. Create a new team site in SharePoint Online with the name `Product marketing`
 1. Upload all the documents from the `assets` folder to the Documents library in the site
 
 ### Provision your declarative copilot
@@ -51,6 +51,7 @@ The following files can be customized and demonstrate an example implementation 
 | ------------------------------------ | ------------------------------------------------------------------------------ |
 | `appPackage/declarativeCopilot.json` | Define the behaviour and configurations of the declarative copilot.            |
 | `appPackage/manifest.json`           | Teams application manifest that defines metadata for your declarative copilot. |
+| `appPackage/instruction.txt`         | Instructions for the declarative agent.                                        |
 
 The following are Teams Toolkit specific project files. You can [visit a complete guide on Github](https://github.com/OfficeDev/TeamsFx/wiki/Teams-Toolkit-Visual-Studio-Code-v5-Guide#overview) to understand how Teams Toolkit works.
 
