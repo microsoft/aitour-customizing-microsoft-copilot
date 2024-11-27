@@ -20,6 +20,7 @@ This session will introduce the components of the Microsoft Copilot stack and ex
 You will learn how to integrate your systems, workflows, and applications directly with Microsoft Copilot, maximizing Copilot's potential through different types of copilot extensions. You will learn which type of extensibility and development pathway is the right one for you and see these extensions be built live during the breakout.
 
 ## Technology Used
+
 - Declarative agents
 - Plugins
 - Custom engine agents
@@ -27,6 +28,8 @@ You will learn how to integrate your systems, workflows, and applications direct
 - Teams Toolkit
 - Visual Studio Code
 - Microsoft 365 Copilot
+- Azure OpenAI
+- Azure AI Search
 
 ## Additional Resources and Continued Learning
 
@@ -56,6 +59,12 @@ If you are presenting these slides, you can find additional resources, including
 </b></sub></a><br />
             <a href="https://github.com/garrytrinder" title="talk">📢</a> 
     </td>
+    <td align="center"><a href="http://learnanalytics.microsoft.com">
+        <img src="https://github.com/rabwill.png" width="100px;" alt="Rabia Williams"/><br />
+        <sub><b>Rabia Williams
+</b></sub></a><br />
+            <a href="https://github.com/garrytrinder" title="talk">📢</a> 
+    </td>    
     <td align="center"><a href="http://learnanalytics.microsoft.com">
         <img src="https://github.com/barnam-bora.png" width="100px;" alt="Barnam Bora"/><br />
         <sub><b>Barnam Bora
