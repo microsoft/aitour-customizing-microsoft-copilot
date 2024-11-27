@@ -34,7 +34,8 @@ If you are presenting these slides, you can find additional resources, including
 
 | Resources          | Links                             | Description        |
 |:-------------------|:----------------------------------|:-------------------|
-| Copilot Developer Camp  | [Link 1](https://aka.ms/copilotdevcamp) | Learn more about Copilot Extensibility and get hands on with Labs and Samples|
+| Copilot Developer Camp  | [Link](https://aka.ms/copilotdevcamp) | Learn more about Copilot Extensibility with hands on with Labs and Samples|
+| Microsoft 365 Copilot Extensibility Learn Paths | [Link](https://aka.ms/extend-microsoft365-copilot)| Explore Microsoft 365 Copilot Extensibility with Learn paths|
 
 
 ## Content Owners
