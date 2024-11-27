@@ -16,20 +16,17 @@ This repo is a companion to this session at Microsoft AI Tour, a worldwide tour 
 
 This session will introduce the components of the Microsoft Copilot stack and explain the different options of extensibility and integration that you can enable with Microsoft Copilot. The session contains architecture and code deepdives that help showcase the different extensibility pathways.
 
-![Copilot extensions fundamentals](https://github.com/user-attachments/assets/374a73e0-4ad2-4d72-bd36-3ab31aa8575b)
-
 ## Learning Outcomes
 You will learn how to integrate your systems, workflows, and applications directly with Microsoft Copilot, maximizing Copilot's potential through different types of copilot extensions. You will learn which type of extensibility and development pathway is the right one for you and see these extensions be built live during the breakout.
 
 ## Technology Used
-- Plugins
-- Connectors
 - Declarative agents
-- Teams Toolkit (VS Code)
-- Custom copilots
-- AI Library + Toolkit (VS Code)
-- Copilot Studio
-- AI Studio + Open AI Models
+- Plugins
+- Custom engine agents
+- Teams AI library
+- Teams Toolkit
+- Visual Studio Code
+- Microsoft 365 Copilot
 
 ## Additional Resources and Continued Learning
 
