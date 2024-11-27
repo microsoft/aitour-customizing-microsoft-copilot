@@ -1,64 +1,41 @@
-# Overview of the basic declarative copilot template
+# Get started with the sample
 
-## Build a basic declarative copilot
+Visit [session-delivery-resources](../../session-delivery-resources/declarative-agent/) to learn more about running this sample locally. 
 
-With the declarative copilot, you can build a custom version of Copilot that can be used for specific scenarios, such as for specialized knowledge, implementing specific processes, or simply to save time by reusing a set of AI prompts. 
+## Final application
 
-## Get started
+This folder contains a solution from the [Copilot Developer Camp labs](https://aka.ms/copilotdevcamp). When completed, the solution is a declarative agent called "Trey Genie" which provides assistant to the employees of Trey Research. Trey Research is a fictitious consulting company that supplies talent in the software and pharmaceuticals industries. The vision for this demo is to show the full potential of Copilot extensions in a relatable business environment.
 
-> **Prerequisites**
->
-> To run this app template in your local dev machine, you will need:
->
-> - [Node.js](https://nodejs.org/), supported versions: 16, 18
-> - A [Microsoft 365 account for development](https://docs.microsoft.com/microsoftteams/platform/toolkit/accounts).
-> - [Teams Toolkit Visual Studio Code Extension](https://aka.ms/teams-toolkit) (v5.10.0) and higher, or [Teams Toolkit CLI](https://aka.ms/teamsfx-toolkit-cli) beta (3.0.3-beta.2024081502.0) and higher
-> - [Microsoft 365 Copilot license](https://learn.microsoft.com/microsoft-365-copilot/extensibility/prerequisites#prerequisites)
+### Prompts that work in the completed solution
 
-### Prepare SharePoint Online
+  * what trey projects am i assigned to?
+    (NOTE: When authentication is "none" or "API key", the logged in user is assumed to be consultant "Avery Howard". When OAuth is enabled, the logged in user is mapped to user ID 1 in the database, so you will have Avery's projects, etc.)
+  * what trey projects is domi working on?
+  * do we have any trey consultants with azure certifications?
+  * what trey projects are we doing for relecloud?
+  * which trey consultants are working with woodgrove bank?
+  * in trey research, how many hours has avery delivered this month?
+  * please find a trey consultant with python skills who is available immediately
+  * are any trey research consultants available who are AWS certified? (multi-parameter!)
+  * does trey research have any architects with javascript skills? (multi-parameter!)
+  * what trey research designers are working at woodgrove bank? (multi-parameter!)
+   * please charge 10 hours to woodgrove bank in trey research (POST request)
+   * please add sanjay to the contoso project for trey research (POST request with easy to forget entities, hoping to prompt the user; for now they are defaulted)
 
-In a web browser:
+If the sample files are installed and accessible to the logged-in user,
 
-1. Create a new team site in SharePoint Online with the name `Product marketing`
-1. Upload all the documents from the `assets` folder to the Documents library in the site
+   * find my hours spreadsheet and get the hours for woodgrove, then bill the client
+   * make a list of my projects, then write a summary of each based on the statement of work.
 
-### Provision your declarative copilot
+## API Plugin Features
 
-In Visual Studio Code:
+The sample aims to showcase the following features of an API plugin used within a Copilot declarative agent:
 
-1. First, select the Teams Toolkit icon on the left in the VS Code toolbar.
-1. In the file `env/.env.dev`, replace `tenantname` with the name of your Microsoft 365 tenant.
-1. In the Account section, sign in with your [Microsoft 365 account](https://docs.microsoft.com/microsoftteams/platform/toolkit/accounts) if you haven't already.
-1. Select `Provision` in "Lifecycle" section to provision your declarative copilot.
-
-### Test your declarative copilot
-
-1. Select `Preview in Copilot (Edge)` or `Preview in Copilot (Chrome)` from the launch configuration dropdown.
-1. Once the Copilot app is loaded in the browser, click on the "…" menu and select "Copilot chats". You will see your declarative copilot on the right rail. Clicking on it will change the experience to showcase the logo and name of your declarative copilot.
-1. Ask a question to your declarative copilot and it should respond based on the instructions provided.
-
-## What's included in the template
-
-| Folder       | Contents                                                                                 |
-| ------------ | ---------------------------------------------------------------------------------------- |
-| `.vscode`    | VSCode files for debugging                                                               |
-| `appPackage` | Templates for the Teams application manifest, the GPT manifest and the API specification |
-| `env`        | Environment files                                                                        |
-
-The following files can be customized and demonstrate an example implementation to get you started.
-
-| File                                 | Contents                                                                       |
-| ------------------------------------ | ------------------------------------------------------------------------------ |
-| `appPackage/declarativeCopilot.json` | Define the behaviour and configurations of the declarative copilot.            |
-| `appPackage/manifest.json`           | Teams application manifest that defines metadata for your declarative copilot. |
-| `appPackage/instruction.txt`         | Instructions for the declarative agent.                                        |
-
-The following are Teams Toolkit specific project files. You can [visit a complete guide on Github](https://github.com/OfficeDev/TeamsFx/wiki/Teams-Toolkit-Visual-Studio-Code-v5-Guide#overview) to understand how Teams Toolkit works.
-
-| File           | Contents                                                                                                                                  |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| `teamsapp.yml` | This is the main Teams Toolkit project file. The project file defines two primary things: Properties and configuration Stage definitions. |
-
-## Addition information and references
-
-- [Extend Microsoft Microsoft 365 Copilot](https://aka.ms/teamsfx-copilot-plugin)
+  1. API plugin works with any platform that supports REST requests
+  1. Construct queries for specific data using GET requests
+  1. Multi-parameter queries
+  1. Allow updating and adding data using POST requests
+  1. Prompt users before POSTing data; capture missing parameters
+  1. Invoke from Declarative Copilot, allowing general instructions and knowledge, and removing the need to name the plugin on every prompt
+  1. Display rich adaptive cards
+  1. Entra ID login with /me path support
