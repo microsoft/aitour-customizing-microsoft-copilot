@@ -1,8 +1,8 @@
-# Instructions for building declarative agents with Teams Toolkit for Visual Studio Code
+# Instructions for building declarative agents with Teams Toolkit for Visual Studio Code 
 
-This demo showcases how to build a declarative agent with Teams Toolkit for Visual Studio Code.
+This document showcases how to run the declarative agent, Trey Genie which demonstrates an agent which is grounded in the API plugin as well as in specific SharePoint files.
 
-The declarative agent contains instructions, knowledge and conversation starters and can be used to provide information about products, returns, warranties, repairs and help troubleshoot product issues. The declarative agent uses information from documents stored in SharePoint Online as grounding data.
+The declarative agent contains instructions, a plugin (skills) to call real time API and uses knowledge from documents stored in SharePoint Online as grounding data.
 
 ## Prerequisites
 
@@ -10,143 +10,58 @@ The declarative agent contains instructions, knowledge and conversation starters
 - [Teams Toolkit Visual Studio Code Extension](https://aka.ms/teams-toolkit), v5.10.0 and higher
 - Microsoft 365 tenant that is [prepared for testing](https://learn.microsoft.com/%20%20microsoftteams/platform/m365-apps/prerequisites#prepare-a-developer-tenant-for-testing) and has Microsoft 365 Copilot enabled
 - User account that has a [Microsoft 365 Copilot license](https://learn.microsoft.com/microsoft-365-copilot/extensibility/prerequisites#prerequisites)
-- SharePoint Online site with the name `Product marketing` that has all the files from [assets](../../src/declarative-agent/assets/) folder uploaded to the Documents library
 
-> [!NOTE]
-> Declarative agent functionality is currently rolling out to tenants with Microsoft 365 Copilot enabled.
 
-## Build a basic declarative agent
+## Set up SharePoint Site 
 
-1. Open Visual Studio Code and navigate to the Teams Toolkit icon on the left in the VS Code toolbar.
-1. Select **Create a New App**.
-1. Select **Copilot Agent**.
-1. Select **Declarative Agent**.
-1. Select **No plugin**.
-1. Select default folder as the location to create the project.
-1. Enter **da-product-support** as the application name.
+-  Create SharePoint Online site Teams Site with the name `Trey Research legal` 
+- In it's `Documents` folder upload all the files from [sampleDocs](../../src/declarative-agent/sampleDocs/) folder in this repo. 
 
-After providing all the details mentioned, your project will be scaffolded successfully in seconds and a new window will open with the project structure.
+## Set up Trey Genie locally 
+- Clone this github repo, navigate to folder **src/declarative-agent/**  and open it in Visual Studio Code.
+- In the folder, select **env** folder and rename:
+**.env.local.sample** file to **.env.local**
+**.env.local.user.sample** file to **env.local.user**
+- Open **env.local** file and update the value of `SHAREPOINT_DOCS_URL` with you SharePoint Online site's absolute URL, where you uploaded the sample documents in the previous step
 
-1. Open Teams Toolkit sidebar.
-1. Select **Provision** in the lifeycle section.
+## Run Trey Genie locally in Teams
 
-After the provisioning is completed, you can test your declarative agent.
+Select Teams Toolkit on Visual Studio Code navigation bar, login with Microsoft 365 Account.
 
-1. Open a browser and navigate to [Microsoft 365 Copilot](https://office.com/chat).
-1. In the message box, type _What can you do?_ and press <kbd>Enter</kbd>.
-1. Note the response from Copilot chat.
-1. In Microsoft 365 Copilot expand the side menu.
-1. Select **da-product-support**.
-1. In the message box, type _What can you do?_ and press <kbd>Enter</kbd>.
-1. Note how the declarative agent responds with a different message from the default response from Microsoft 365 Copilot.
+>Make sure that sideloading is enabled for your account. If Sideloading is not enabled yet:
+>
+>1️⃣ Navigate to https://admin.microsoft.com/, which is the Microsoft 365 Admin Center.
+>
+>2️⃣ In the left panel of the admin center, select Show all to open up the entire navigation. When the panel opens, select Teams to >open the Microsoft Teams admin center.
+>
+>3️⃣ In the left of the Microsoft Teams admin center, open the Teams apps accordion. Select Setup Policies, you will see a list of >App setup policies. Then, select the Global (Org-wide default) policy.
+>
+>4️⃣ Ensure the first switch, Upload custom apps is turned On.
 
-## Update declarative agent
+Start debugging your app by selecting **Run and Debug** tab on Visual Studio Code and Debug in Teams (Edge) or Debug in Teams (Chrome).  Or select F5.
 
-In Visual Studio Code:
+Microsoft Teams will pop up on your browser. 
+Open the Copilot chat 1️⃣  and the right flyout 2️⃣ to show your previous chats and declarative agents and select the Trey Genie Local copilot 3️⃣ .
 
-1. Open **appPackage/declarativeCopilot.json**.
-1. Update **name** property with `Product support`.
-1. Update **description** property with:
+![chat screen in Teams](../declarative-agent/assets/copilot-chat-screen.png)
 
-    ```text
-    Contoso Electronics product support agent is an assistant that provides answers to questions about products that have been designed, built and sold by Contoso Electronics. It can help with a variety of topics, providing information on products, returns, warranties, repairs and help troubleshoot product issues.
-    ```
+Try one of the conversation starters like `Find consultants with TypeScript skills`.
 
-1. Add **conversation_starters** array property with the following code snippet:
+![Trey genie working](../declarative-agent/assets/working-trey.png)
 
-    ```json
-    "conversation_starters": [
-        {
-            "title": "Product information",
-            "text": "Tell me about the Eagle Air"
-        },
-        {
-            "title": "Returns policy",
-            "text": "What is the returns policy?"
-        },
-        {
-            "title": "Product information",
-            "text": "Can you provide information on a specific product?"
-        },
-        {
-            "title": "Product troubleshooting",
-            "text": "I'm having trouble with a product. Can you help me troubleshoot the issue?"
-        },
-        {
-            "title": "Repair information",
-            "text": "Can you provide information on how to get a product repaired?"
-        },
-        {
-            "title": "Contact support",
-            "text": "How can I contact support for help?"
-        }
-    ]
-    ```
+### Prompts that work in the completed solution
 
-1. Add **capabilities** array property with the following code snippet:
+  * what trey projects am i assigned to?
+    (NOTE: The logged in user is assumed to be consultant "Avery Howard". As this sample does not have Auth)
+  * what trey projects is domi working on?
+  * do we have any trey consultants with azure certifications?
+  * what trey projects are we doing for relecloud?
+  * which trey consultants are working with woodgrove bank?
+  * in trey research, how many hours has avery delivered this month?
+  * please find a trey consultant with python skills who is available immediately
+  * are any trey research consultants available who are AWS certified? (multi-parameter!)
+  * does trey research have any architects with javascript skills? (multi-parameter!)
+  * what trey research designers are working at woodgrove bank? (multi-parameter!)
+   * please charge 10 hours to woodgrove bank in trey research (POST request)
+   * please add sanjay to the contoso project for trey research (POST request with easy to forget entities, hoping to prompt the user; for now they are defaulted)
 
-    ```json
-    "capabilities": [
-        {
-            "name": "OneDriveAndSharePoint",
-            "items_by_url": [
-                {
-                    "url": "https://${{TENANT_NAME}}.sharepoint.com/sites/productmarketing"
-                }
-            ]
-        }
-    ]
-    ```
-
-1. Save the file.
-
-1. Open **appPackage/instructions.txt**.
-1. Replace the contents of the file with:
-
-    ```text
-    From now on, you are known as Contoso Electronics Product Support declarative agent. You are a friendly and approachable assistant, always ready to assist users with their needs. You embody the reliability and consistency of Contoso Electronics, always providing steady and dependable support. Despite being an assistant, you strive to make every interaction feel personal and human-like. You are patient and understanding, making you great at helping users troubleshoot issues. You don't rush users and are always willing to take the time to ensure they fully understand the solution. You are also knowledgeable about all Contoso Electronics products. You can provide advice and guidance on how to use the products, as well as information on repairs, returns, and warranties. Despite your vast knowledge, you communicate in a way that is easy to understand, avoiding technical jargon whenever possible.
-    ```
-
-1. Save the file.
-
-1. Open **env/.env.dev**.
-1. Add the **TENANT_NAME** environment variable with the following code snippet:
-
-    ```text
-    TENANT_NAME=<tenantname>
-    ```
-
-1. Replace `<tenantname>` with the name of your tenant.
-1. Save the file.
-1. Navigate to the Teams Toolkit icon on the left in the VS Code toolbar.
-1. Select **Provision** in the lifeycle section.
-1. Wait for the process to finish.
-
-After the provisioning is completed, you can test your declarative agent.
-
-In the browser:
-
-1. Refresh the page.
-1. In Microsoft 365 Copilot expand the side menu.
-1. Select **Product support**.
-1. Select the conversation starter _Tell me about the Eagle Air_.
-1. Send the message.
-
-Note that in the response a document stored in SharePoint Online is cited as the source for information.
-
-Try these follow up messages:
-
-1. Tell me about Contoso Quad.
-
-![Screenshot of Microsoft Edge showing a declarative agent in Microsoft 365 Copilot. A response containing product information about Contoso Quad product is displayed.](./assets/tell-me-about-contoso-quad.png)
-
-1. Recommend a product suitable for a farmer.
-
-![Screenshot of Microsoft Edge showing a declarative agent in Microsoft 365 Copilot. A response containing a recommended product for a farmer is displayed.](./assets/recommend-product.png)
-
-1. Explain why the Eagle Air is more suitable than Contoso Quad.
-
-![Screenshot of Microsoft Edge showing a declarative agent in Microsoft 365 Copilot. A response comparing explaining why the Eagle Air is more suitable for a farmer than Contoso Quad is displayed.](./assets/explain-comparison.png)
-
-> [!NOTE]
-> [Source code](../../src/declarative-agent/) for this demo is available.
