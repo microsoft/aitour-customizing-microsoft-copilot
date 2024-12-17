@@ -17,7 +17,7 @@ code.
 
 | Resources          | Links                            | Description |
 |-------------------|----------------------------------|-------------------|
-| PowerPoint        | [Presentation](https://aka.ms/AArxxcd) | Slides |
+| PowerPoint        | [Presentation](https://aka.ms/AAtl1af) | Slides |
 | PPT Recording     | [Session Recording](https://aka.ms/AAtkk28) | Video Recording of the PowerPoint slides with no audio |
 | Demo - Custom Engine Agent 1 & 2| [Instructions](custom-engine-agent) & [Video 1](https://aka.ms/AAtl1ak) and [Video 2](https://aka.ms/AAtl1ai) | Demo instructions and videos |
 | Demo - Declarative Agent | [Instructions](declarative-agent) & [Video](https://aka.ms/AAtkk29) | Demo instructions and videos |
